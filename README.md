@@ -26,6 +26,28 @@ The following Libraries have been used to make writing this test easier
 
 You could use the following command
 > pytest tests/ 
+ 
+## Cross browsing
+You can run tests with different browsers. To run tests with specific browser you can change property value in [definitions.py](definitions.py) file.
+> browser_name = 'chrome'
+
+Available browsers are:
+
+```
+chrome
+firefox
+```
+
+<p style='color:green'>Note: Selected browser should be installed on your local machine.</p>
+
+### GH_TOKEN
+
+webdriver_manager downloading some webdrivers from their official GitHub repositories but GitHub has [limitations](https://docs.github.com/en/rest/overview/resources-in-the-rest-api#rate-limiting) like 60
+requests per hour for unauthenticated users. In case not to face an error related to github credentials, you need to 
+[create](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) github token and place it into your environment: (*)
+
+In case you face this issue you can specify `GH_TOKEN` in [definition.py](definition.py) file
+> gh_token = ''
 
 # Generating Allure report using pytest
 1. In your project directory, you first need to generate a folder to save the allure reports, you can automatically generate this with a command

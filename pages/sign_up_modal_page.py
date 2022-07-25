@@ -8,7 +8,6 @@ from utils.helper import get_text_of_alert
 
 
 def populate_username_and_password(username, password):
-    sleep(1)
     username_text_box.should(be.visible).set_value(username)
     password_text_box.should(be.clickable).set_value(password)
     sign_up_button_modal.click()

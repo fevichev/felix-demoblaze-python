@@ -7,7 +7,7 @@ from selene.support.conditions import be
 
 from locators.place_order_modal import name_order_text_box, country_order_text_box, city_order_text_box, \
     credit_card_order_text_box, month_order_text_box, year_order_text_box, purchase_button, ok_order_submit_button, \
-    thank_you_text, order_description_text
+    thank_you_text, order_description_text, order_modal_label
 from pages.device_page import price_values
 
 
@@ -44,6 +44,7 @@ def verify_submitted_final_price():
 def click_ok_on_submission_modal():
     sleep(1)
     ok_order_submit_button.should(be.visible).click()
+    order_modal_label.should(be.hidden)
 
 
 def get_expected_total_price(prices):

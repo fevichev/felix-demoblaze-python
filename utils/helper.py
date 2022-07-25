@@ -6,7 +6,6 @@ from selenium.webdriver.support.expected_conditions import alert_is_present
 
 
 def accept_alert_message():
-    sleep(1)
     wait().at_most(4, SECOND).until(alert_is_present)
     browser.driver.switch_to.alert.accept()
 

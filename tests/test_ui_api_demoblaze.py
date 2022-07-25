@@ -1,6 +1,5 @@
 from faker import Faker
 
-from definitions import URL
 from pages import home_page, sign_up_modal_page, login_modal_page, device_page, cart_page, place_order_modal_page
 from utils import helper
 
@@ -13,7 +12,6 @@ class TestSignInPage:
         session['username'] = username
         session['password'] = password
 
-        home_page.open_page(URL['UI'])
         home_page.click_sign_up_button()
         sign_up_modal_page.populate_username_and_password(username, password)
         sign_up_modal_page.verify_alert_message()
