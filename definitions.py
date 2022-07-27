@@ -4,6 +4,9 @@ URL = {
     'API': 'https://api.demoblaze.com'
 }
 
+# Header for API rest endpoints
+HEADER_API = {'Content-Type': 'application/json'}
+
 # Browser name (chrome, firefox)
 browser_name = 'chrome'
 

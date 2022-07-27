@@ -8,7 +8,7 @@ class TestSignInPage:
 
     def test_sign_up(self, session):
         username = Faker().ascii_email()
-        password = Faker().ascii_email()
+        password = Faker().password()
         session['username'] = username
         session['password'] = password
 
