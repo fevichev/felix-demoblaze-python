@@ -56,7 +56,7 @@ In case you face this issue you can specify `GH_TOKEN` in [definition.py](defini
 This will create a folder named allure-report in your project directory.
 
 2. You are now set to run your test with pytest runner by specifying the directory path to save your allure report, for example :
-> pytest --alluredir=allure-report/
+> pytest -v -s tests/ --alluredir=allure-report/
 
 Once test execution completes, all the test results would get stored in allure-report directory.
 
