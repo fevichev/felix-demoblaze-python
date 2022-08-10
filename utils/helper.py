@@ -1,5 +1,3 @@
-from time import sleep
-
 from busypie import wait, SECOND
 from selene.support.shared import browser
 from selenium.webdriver.support.expected_conditions import alert_is_present

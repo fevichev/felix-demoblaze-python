@@ -25,7 +25,7 @@ The following Libraries have been used to make writing this test easier
 ## How to run
 
 You could use the following command
-> pytest tests/ 
+> pytest -v -s tests/ 
  
 ## Cross browsing
 You can run tests with different browsers. To run tests with specific browser you can change property value in [definitions.py](definitions.py) file.
