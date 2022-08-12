@@ -8,6 +8,6 @@ busypie
 pytest
 allure-pytest
 selene==2.0.0b5
-pytest-tldr
 flake8
 loguru
+pytest-messenger

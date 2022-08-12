@@ -19,8 +19,8 @@ The following Libraries have been used to make writing this test easier
 - Flake8 - flake8 is a python tool that glues together pycodestyle, pyflakes, mccabe, and third-party plugins to check 
     the style and quality of some python code.
 - Requests - Requests is a simple, yet elegant, HTTP library.
-- pytest-tldr - Plugin that gives you minimalist output, in monochrome, while still giving an indication of test suite progress.
 - loguru - Loguru is a library which aims to bring enjoyable logging in Python.
+- pytest-messenger - Pytest to IM reporting plugin
 ```
 
 ## How to run
@@ -63,3 +63,13 @@ Once test execution completes, all the test results would get stored in allure-r
 
 3. You can now view the allure-report in the browser with the command –
 > allure serve allure-report/
+
+# Generate Report to your Slack channel
+
+- Please create Slack webhook application and link it to your channel. (How to do
+  this, you can watch video... [Link to YouTube video](https://www.youtube.com/watch?v=6NJuntZSJVA))
+- Run pytest normally and use the following option `--slack_hook=%Slack_webhook_link%`
+- For the full documentation please refer to this link [pytest-messenger](https://github.com/pytest-dev/pytest-messenger/wiki/Slack#example))
+
+Example:
+> pytest -v -s tests/ --slack_hook=https://hooks.slack.com/services/Aaaaaaaaaaa/xxxxxxxxxxx/yyyyyyyyyyyyyy --disable-pytest-warnings
