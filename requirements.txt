@@ -1,4 +1,4 @@
-Faker==8.10.1
+Faker
 selenium
 PyHamcrest
 pip
@@ -10,3 +10,4 @@ allure-pytest
 selene==2.0.0b5
 pytest-tldr
 flake8
+loguru

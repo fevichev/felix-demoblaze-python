@@ -1,6 +1,7 @@
 import base64
 
 import requests
+from loguru import logger
 from requests import HTTPError
 
 from definitions import URL, HEADER_API
@@ -18,9 +19,9 @@ def get_auth_token_api(session):
         response = requests.post(baseServerUrl + uri, data=json_body, headers=HEADER_API)
         response.raise_for_status()
     except HTTPError as http_err:
-        print(f'HTTP error occurred: {http_err}')
+        logger.info(f'HTTP error occurred: {http_err}')
     else:
-        print('Success!')
+        logger.info('Success!')
 
         return response.text.split(': ')[1].replace('"\n', '')
 

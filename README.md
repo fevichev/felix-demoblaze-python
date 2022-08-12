@@ -20,6 +20,7 @@ The following Libraries have been used to make writing this test easier
     the style and quality of some python code.
 - Requests - Requests is a simple, yet elegant, HTTP library.
 - pytest-tldr - Plugin that gives you minimalist output, in monochrome, while still giving an indication of test suite progress.
+- loguru - Loguru is a library which aims to bring enjoyable logging in Python.
 ```
 
 ## How to run
