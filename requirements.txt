@@ -7,7 +7,8 @@ requests
 busypie
 pytest
 allure-pytest
-selene==2.0.0b5
+selene==2.0.0rc3post3
 flake8
 loguru
 pytest-messenger
+click
